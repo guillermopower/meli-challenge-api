@@ -6,4 +6,9 @@ El repositorio es https://github.com/guillermopower/meli-challenge-api
 
 Instrucciones para clonar el repositorio:
     $ git clone https://github.com/guillermopower/meli-challenge-api
+    
+Para ejecutar la API:
+1) Bajarse SOAP-UI o similar.
+2) Cargar url endpoint y en el header,   Conten-Type = application/json;
+
 
