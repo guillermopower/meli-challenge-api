@@ -16,9 +16,9 @@ namespace meli_challenge_business
             this.statsDal = _statsDal;
         }
 
-        public IStatsServiceResponse getStatistics()
+        public IStatsServiceResponse GetStatistics()
         {
-            return statsDal.getStatistics();
+            return statsDal.GetStatistics();
         }
     }
 }

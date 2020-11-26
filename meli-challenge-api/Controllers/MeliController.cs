@@ -37,7 +37,7 @@ namespace meli_challenge_api.Controllers
         [HttpGet]
         public IStatsServiceResponse stats()
         {
-            return statsBss.getStatistics();
+            return statsBss.GetStatistics();
         }
     }
 }

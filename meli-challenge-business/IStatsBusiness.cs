@@ -9,6 +9,6 @@ namespace meli_challenge_business
 {
     public interface IStatsBusiness
     {
-        IStatsServiceResponse getStatistics();
+        IStatsServiceResponse GetStatistics();
     }
 }

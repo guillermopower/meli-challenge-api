@@ -9,6 +9,6 @@ namespace meli_challenge_dal
 {
     public interface IStatsDAL
     {
-        IStatsServiceResponse getStatistics();
+        IStatsServiceResponse GetStatistics();
     }
 }

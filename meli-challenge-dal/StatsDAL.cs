@@ -17,7 +17,7 @@ namespace meli_challenge_dal
             this.statsServiceResponse = _statsServiceResponse;
         }
 
-        public IStatsServiceResponse getStatistics()
+        public IStatsServiceResponse GetStatistics()
         {
             try
             {

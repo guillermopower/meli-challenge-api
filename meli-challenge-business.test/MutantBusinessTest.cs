@@ -106,15 +106,15 @@ namespace meli_challenge_business.test
             StatsServiceResponse data = new StatsServiceResponse() { count_human_dna = 1, count_mutant_dna = 1, ratio = 0.5M };
             Mock<IStatsDAL> statDal = new Mock<IStatsDAL>();
 
-            statDal.Setup(a => a.getStatistics()).Returns(Task.FromResult(data).Result);
+            statDal.Setup(a => a.GetStatistics()).Returns(Task.FromResult(data).Result);
 
             StatsBusiness statsBss = new StatsBusiness(statDal.Object);
 
-            var r =  statsBss.getStatistics();
+            var r =  statsBss.GetStatistics();
 
             Assert.AreEqual(r, data);
 
-            statDal.Verify(m => m.getStatistics(), Times.Once);
+            statDal.Verify(m => m.GetStatistics(), Times.Once);
         }
 
     }
